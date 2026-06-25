@@ -13,6 +13,8 @@ API docs:
 
 ```text
 http://localhost:8000/docs
+http://localhost:8000/redoc
+http://localhost:8000/openapi.json
 ```
 
 Agents:
@@ -20,6 +22,12 @@ Agents:
 ```text
 GET  /api/v1/agents
 POST /api/v1/agents/{agent_name}/run
+```
+
+Main resume workflow:
+
+```text
+POST /api/v1/workflows/resume-optimization
 ```
 
 ## Workflow
