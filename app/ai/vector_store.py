@@ -1,8 +1,3 @@
-from qdrant_client import QdrantClient
+from app.rag.vector_store import get_qdrant_client
 
-from app.core.config import settings
-
-
-def get_qdrant_client() -> QdrantClient:
-    return QdrantClient(url=settings.qdrant_url, api_key=settings.qdrant_api_key)
-
+__all__ = ["get_qdrant_client"]

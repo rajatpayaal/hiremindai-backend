@@ -15,6 +15,13 @@ API docs:
 http://localhost:8000/docs
 ```
 
+Agents:
+
+```text
+GET  /api/v1/agents
+POST /api/v1/agents/{agent_name}/run
+```
+
 ## Workflow
 
 The initial AI workflow lives in `app/workflows/candidate_screening.py`.
